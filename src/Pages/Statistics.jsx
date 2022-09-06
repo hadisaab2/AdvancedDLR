@@ -5,6 +5,8 @@ import TotalSms from "../components/TotalSms";
 import "../css/main.css";
 import { SourcesContext } from "../Context/SourcesContext";
 import Statisticscount from "../components/Statisticscount";
+import Sidebar from "../components/Sidebar";
+import Header from "../components/Header";
 
 export default function Statistics() {
   const { clickedstate, showstats, tablerows } = useContext(SourcesContext);
@@ -13,10 +15,14 @@ export default function Statistics() {
 
   return (
     <>
-      <Statisticscount />
-      <div className="chartcountdiv">
-        <LineChart />
-        <Senderstats clickedsender={clickedsender} />
+      <Sidebar />
+      <div className="maindiv">
+        <Header />
+        <Statisticscount />
+        <div className="chartcountdiv">
+          <LineChart />
+          <Senderstats clickedsender={clickedsender} />
+        </div>
       </div>
     </>
   );

@@ -6,6 +6,9 @@ import { FaUserAlt } from "react-icons/fa";
 import { SourcesContext } from "../Context/SourcesContext";
 import { useAlert } from "react-alert";
 import axios from "axios";
+import Sidebar from "../components/Sidebar";
+import Header from "../components/Header";
+
 
 export default function () {
   const [sourcevalue, setsourcevalue] = useState("");
@@ -51,6 +54,10 @@ export default function () {
     }
   };
   return (
+    <>
+    <Sidebar/>
+    <div className="maindiv">
+    <Header />
     <div className="container">
       <div className="addsourcetop">
         <FaUserAlt className="addicon" size="24px" />
@@ -69,5 +76,7 @@ export default function () {
         })}
       </div>
     </div>
+    </div>
+    </>
   );
 }

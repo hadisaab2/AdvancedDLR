@@ -7,7 +7,7 @@ export default function Header() {
     <div className="header">
         <AiFillHome size="17px"/>
         
-        <span style={{marginLeft:"10px"}}>Home / Search</span>
+        <span style={{marginLeft:"10px"}}>Home / Statistics</span>
         
         </div>
   )

@@ -8,6 +8,7 @@
     width: 35vh;
     display: flex;
     flex-direction:column;
+    overflow-y: scroll;
 
 }
 .sidetab{
@@ -90,8 +91,6 @@
     justify-content: flex-end;
     padding-right: 30px;
     height:100%;
-
-
 }
 .username{
     margin-top:5px;
@@ -102,6 +101,7 @@
     letter-spacing: 1px;
     font-size:11px
 }
+
 .userdiv{
     padding-top: 15%;
     padding-bottom: 15%;
@@ -721,3 +721,141 @@ border-radius: 20px !important;
     border-color: transparent !important;
     margin-top: 10px;
 }
+
+/* LOGINNNNNNNNNN */
+.loginmaindiv{
+    background: transparent;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction:row
+
+
+}
+
+.loginleft{
+    background:linear-gradient(to bottom,#2b585c,#a7cccf);
+    flex:0.8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.loginright{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:#F1F4F9
+
+
+
+}
+.smsimage{
+    width:70%;
+    filter:drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.534));
+    margin-top: 30px;
+    animation:animatesvg 1s;
+
+}
+@keyframes animatesvg{
+    0% {
+        opacity: 0;
+        margin-left: -200px;
+    }
+    100%{
+        opacity:1;
+        margin-right: 0px;
+
+    }
+}
+.logintitlediv{
+
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-left:3%;
+    animation:animatetitle 0.5s;
+}
+.loginADLRlogo{
+    color:#ffffff; 
+    margin-right: -8px;
+
+}
+@keyframes animatetitle{
+    0% {
+        opacity: 0;
+        margin-left: -200px;
+    }
+    100%{
+        opacity:1;
+        margin-left: 0px;
+
+    }
+}
+.logintitle{
+    font-size:30px;
+    color:#ffffff; 
+
+
+}
+.logintitledlr{
+    font-size:30px;
+    color:#ffffff; 
+    margin-right: 3px;
+    font-weight: bold;
+
+
+
+
+}
+.logindiv{
+    width:40%;
+    display: flex;
+    flex-direction:column;
+    height:40%;
+    filter:drop-shadow(5px 5px 7px  rgba(0, 0, 0, 0.336));
+    animation:animatelogindiv 1s;
+
+}
+@keyframes animatelogindiv{
+    0% {
+        opacity: 0;
+        margin-left: 200px;
+    }
+    100%{
+        opacity:1;
+        margin-left: 0px;
+
+    }
+}
+.username{
+    height:20%;
+    margin-top: 20px;
+
+}
+.password{
+    height:20%;
+    margin-top: 20px;
+}
+.loginbutton{
+    margin-top: 20px;
+    height:15%;
+    border:none;
+    color:white;
+    background-color:#2b585c;
+    border-radius:30px;
+
+
+}
+.loginspan{
+    font-size:22px
+}
+.passwordspan{
+    font-size:12px;
+    color:rgba(0, 0, 0, 0.5);
+
+
+}
+
